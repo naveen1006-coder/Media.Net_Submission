@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f3ff;
+  /* Soft lavender background */
+  color: #1e1b4b;
+  /* Dark violet/navy text */
+}
+
+/* Typography Overrides */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+}
+
+/* Focus styles for accessibility - Updated color */
+:focus-visible {
+  outline: 2px solid #a78bfa;
+  outline-offset: 2px;
+}
+
+/* Button base styles */
+button {
+  font-family: 'Inter', sans-serif;
+  /* Keep buttons strictly sans for readability usually, or user might want serif? sticking to Inter for UI elements for now unless specified */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Input base styles */
+input,
+textarea {
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s ease;
+}
+
+/* Card styles - clean white, soft gray border */
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  /* Soft gray */
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(76, 29, 149, 0.05);
+  /* Very subtle violet tint shadow */
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px -1px rgba(76, 29, 149, 0.1);
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  accent-color: #a78bfa;
+}
