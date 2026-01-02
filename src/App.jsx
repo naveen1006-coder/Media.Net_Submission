@@ -16,7 +16,7 @@ import { Dashboard } from './pages/Dashboard';
 function App() {
     return (
         <AuthProvider>
-            <BrowserRouter>
+            <BrowserRouter basename="/Media.Net_Submission">
                 <Routes>
                     {/* Public Routes */}
                     <Route path="/login" element={<Login />} />
