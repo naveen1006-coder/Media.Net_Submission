@@ -76,7 +76,7 @@ export function Dashboard() {
 
                 {/* Campaigns List */}
                 {campaigns.length === 0 ? (
-                    <div className="p-16 text-center border-dashed border-2 border-white/20 bg-gray-900/95 rounded-2xl border border-white/10">
+                    <div className="p-16 text-center border-dashed border-2 border-white/20 bg-gray-900/95 rounded-2xl ">
                         <div className="text-gray-400 mb-6 flex justify-center">
                             <BarChart2 className="w-20 h-20" />
                         </div>
