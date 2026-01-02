@@ -12,10 +12,10 @@ export default {
             },
             colors: {
                 primary: {
-                    DEFAULT: '#a78bfa', // violet-400
-                    300: '#c4b5fd', // violet-300
-                    400: '#a78bfa', // violet-400
-                    500: '#8b5cf6', // violet-500 (standard backup)
+                    DEFAULT: '#4169E1', // royal blue
+                    300: '#60a5fa', // blue-400
+                    400: '#4169E1', // royal blue
+                    500: '#3b82f6', // blue-500
                 },
                 violet: {
                     50: '#f5f3ff',  // Soft lavender background

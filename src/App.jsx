@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { Login } from './pages/Login';
+import { SignUp } from './pages/SignUp';
 import { Landing } from './pages/Landing';
 import { Workspace } from './pages/Workspace';
 import { Launch } from './pages/Launch';
@@ -19,6 +20,7 @@ function App() {
                 <Routes>
                     {/* Public Routes */}
                     <Route path="/login" element={<Login />} />
+                    <Route path="/signup" element={<SignUp />} />
 
                     {/* Protected Routes */}
                     <Route
